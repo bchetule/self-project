@@ -1,0 +1,14 @@
+body{
+    background-color: wheat;
+}
+.wrapper{
+    margin-bottom: 10px;
+}
+.clear{
+    clear: both;
+}
+
+img{
+    float: left;
+    margin: 15px;
+}
