@@ -6,7 +6,12 @@ import axios from "axios";
 import Navbar from './Navbar';
 import promotionImage from "../Assets/women_clothes/promotion2.jpg";
 import ProductItem from './ProductItem';
-import dress_for_websites from '../Assets/women_clothes/dress_for_websites.jpg';
+// import dress_for_websites from '../Assets/women_clothes/dress_for_websites.jpg';
+// import { CCarouselItem } from '@coreui/react';
+// import { CCarousel, CImage } from '@coreui/react';
+import banner1 from '../Assets/Categories/banner01.jpg';
+import banner2 from '../Assets/Categories/banner02.jpg';
+import Carouselbar from './Carouselbar';
 // import Page from './Page.js';
 // import ProductDetail from './ProductDetail';
 // import Page from './Page';
@@ -18,6 +23,11 @@ function LandingPage(){
   const [data, setData] = useState([]);
   // const [selectedProduct, setSelectedProduct] = useState(null);
 
+  const images = [
+    banner1,
+    banner2,
+    promotionImage,
+  ];
 
   useEffect(() => {
     //Fetching data using axios
@@ -54,11 +64,31 @@ function LandingPage(){
     '--full-span-val': '12', 'marginTop': '8px'}}
 >
 
-        <div className='image'>
+
+        {/* <div className='image'>
           <div className='img-container'>
           <img src={promotionImage} alt={promotionImage.name}></img>
           </div>
+        </div> */}
+
+        <div className='img-slider-container'>
+        <Carouselbar images={images} />
         </div>
+        
+        {/* <div className='carouselele'>
+        <CCarousel controls indicators>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={promotionImage} alt="slide 1" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={banner1} alt="slide 2" />
+          </CCarouselItem>
+          <CCarouselItem>
+            <CImage className="d-block w-100" src={banner2} alt="slide 3" />
+          </CCarouselItem>
+        </CCarousel>
+        </div> */}
+
         
 
           {/* {renderCustomComponents()}
