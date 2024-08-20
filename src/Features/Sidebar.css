@@ -1,0 +1,60 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    /* color: white; */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow-x: hidden;
+    /* padding-top: 16px; */
+    transition: 0.5s; /* Adding transition for smooth animation */
+  }
+  
+  .sidebar.open {
+    width: 13rem;
+    color: white;
+    /* display: inline-block; */
+  }
+  
+  .sidebar a {
+    /* padding: 6px 0px 6px 0px; */
+    /* padding: 8px 10px; */
+    /* width: 100%; */
+    /* color: white  ; */
+    /* justify-content: flex-start; */
+    padding: 10px 15px 10px 15px;
+    font-size: 25px;
+    text-decoration: none;
+    /* font-size: 35px; */
+    /* color: #818181; */
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: rgb(16, 68, 22);
+  }
+  
+  /* Hamburger Icon Styling */
+  .hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 16px;
+  }
+
+
+  .sidebar .closebtn {
+    /* position: absolute; */
+    /* text-align: flex-end; */
+    color: black;
+    top: 0;
+    /* left: 25px; */
+    font-size: 36px;
+    padding-left: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* margin-left: 50px; */
+  }

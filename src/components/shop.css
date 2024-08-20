@@ -1,8 +1,13 @@
 body{
     margin: 0;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* overflow: hidden; */
 }
 
+/* body:hover, body:active, body:focus{
+    overflow-y: scroll;
+} */
+
 .whole{
-    background-color: wheat;
+    /* background-color: wheat; */
 }

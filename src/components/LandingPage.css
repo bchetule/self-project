@@ -20,36 +20,9 @@
 }
 body{
     margin: 0;
-    background-color: #dadada;
+    background-color: cadetblue;
 }
 
-.navbar{
-        display: flex;
-        justify-content: space-between;    
-        background-color: white;
-} 
-.navbar a{
-    margin: 0;
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-.first{
-  margin-right: auto;
-}
-.middle{
-  margin: 10px;
-  border: solid;
-  width: 300px; 
-  box-sizing: border-box;
-  margin-right: auto;
-}
-.last{
-  margin-left: auto;
-}
 input{
   width: 100%; /* Set the width of the input to 100% of its container (.middle) */
   box-sizing: border-box; 

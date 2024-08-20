@@ -1,9 +1,8 @@
 /* src/Carousel.css */
-.carousel {
-    /* position: relative; */
+/* .carousel {
     max-width: 100%;
     overflow: hidden;
-  }
+  } */
   .carousel__btn {
     position: absolute;
     top: 50%;
@@ -27,24 +26,11 @@
     right: 0;
   }
   .carousel__img {
-    /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; */
     width: 80%;
-    /* overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Optionally, you can add these to make the image responsive */
-  /* max-width: none; 
-  max-height: none; */
-
-    /* transition: transform 0.3s ease-in-out;  */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
   }
   /* .carousel__img:hover {
     transform: scale(1.05);

@@ -25,24 +25,23 @@ function Sidebar(){
 
     return(
     <div>
-        <span className='hamburger-icon' onClick={openNav}> &#9776;
-        </span>
+        <span className='hamburger-icon' onClick={openNav}> &#9776;</span>
 
         <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <a href="#clear" className="closebtn" onClick={closeNav}>&times;</a>
-        <a href="#home">
-        <FontAwesomeIcon icon={faHome} /> Home
-        </a>
-        <a href="#services">
-        <FontAwesomeIcon icon={faWrench} /> Services
-        </a>
-        <a href="#clients">
-        <FontAwesomeIcon icon={faUser} /> Clients
-        </a>
-        <a href="#contact">
-        <FontAwesomeIcon icon={faEnvelope} /> Contact
-        </a>
-      </div>
+            <a href="#clear" className="closebtn" onClick={closeNav}>&times;</a>
+            <a href="#home" >
+            <FontAwesomeIcon icon={faHome} /> Home
+            </a>
+            <a href="#services">
+            <FontAwesomeIcon icon={faWrench} /> Services
+            </a>
+            <a href="#clients">
+            <FontAwesomeIcon icon={faUser} /> Clients
+            </a>
+            <a href="#contact">
+            <FontAwesomeIcon icon={faEnvelope} /> Contact
+            </a>
+        </div>
     </div>
     )
 };

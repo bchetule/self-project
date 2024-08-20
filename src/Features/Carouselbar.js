@@ -13,7 +13,7 @@ const Carousel = ({ images }) => {
     );
   };
   return (
-    <div className="carousel">
+    <div>
       <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
         &lt;
       </button>
