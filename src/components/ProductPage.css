@@ -18,8 +18,8 @@
     background-color:;
   } */
 
-  body{
-    min-height: 100%;
+ .Outer-container{
+    height: 100vh;
   }
   .main-container{
     /* min-height: 100%; */
