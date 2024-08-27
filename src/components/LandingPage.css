@@ -68,8 +68,8 @@ ul {
 .listOfProducts{
   padding: 0;
   margin: 50px 0 0 0;
-  border: solid;
-  background-color: white;
+  /* border: solid; */
+  background-color: cadetblue;
   display: inline-grid;
   grid-template-columns: 25% 25% 25% 25%;
   column-gap: 0.01px;
@@ -91,6 +91,7 @@ li{
     /* margin: 2rem auto; */
     /* margin: 1rem 0 1rem 0; */
     display: flex;
+    /* background-color: white; */
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
@@ -100,6 +101,7 @@ li{
 
   .product {
     width: 100%;
+    background-color: white;
     display: flex;
     /* flex: 1 0 21%; */
     flex-direction: column;
@@ -109,7 +111,7 @@ li{
     /* background: white; */
     padding: 1.5rem;
     border-radius: 6px;
-    box-shadow: 0 2px 20px rgb(240, 238, 240);
+    /* box-shadow: 0 2px 20px rgb(240, 238, 240); */
     /* width: 33%;x` */
     transition: all 0.2s;
     /* text-decoration: none; */
