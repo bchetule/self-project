@@ -8,7 +8,7 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #634f40;
     overflow-x: hidden;
     /* padding-top: 16px; */
     transition: 0.5s; /* Adding transition for smooth animation */
