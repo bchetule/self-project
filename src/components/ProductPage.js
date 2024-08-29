@@ -47,10 +47,10 @@ function ProductPage() {
             </div>
           </div>
             <div className='Detailed_description'>
-              <h2>{data.description}</h2>
+              <h2 className='product-title'>{data.description}</h2>
               <h4 className='pricetag'>₹{data.amount}</h4>
               <h4 className='ratingsymbol'>{data.ratings}</h4>
-              </div>
+            </div>
       </div>
   </div>
   );
