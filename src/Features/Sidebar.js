@@ -41,6 +41,9 @@ function Sidebar(){
             <a href="#contact">
             <FontAwesomeIcon icon={faEnvelope} /> Contact
             </a>
+            <a>
+                Log out
+            </a>
         </div>
     </div>
     )

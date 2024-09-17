@@ -58,10 +58,12 @@ import Account from '../src/components/Account.js';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  const handleLogin = () => {
+  const [username, enteredUsername] = useState('');
+  const handleLogin = (data) => {
     // Assuming your authentication logic is here
     // Set isAuthenticated to true when authentication is successful
+    enteredUsername(data);
+    console.log(data);
     setIsAuthenticated(true);
   };
 
@@ -76,7 +78,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart currUser = {username}/>} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/account" element={<Account />} />
         <Route path="/products/:productId" element={<ProductPage />} />

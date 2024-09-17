@@ -48,6 +48,18 @@
     flex-flow: column;
 }
 
+.YourCart{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns:30% 70%; */
+}
+
+
+.ItemImg{
+    width: 20%;
+}
+
 .cart-container2{
     /* position  */
     padding: 1.5rem;

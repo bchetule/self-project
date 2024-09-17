@@ -5,12 +5,11 @@ import LandingPage from "./LandingPage";
 
 function Login({ onLogin }) {
   const [errorMessages, setErrorMessages] = useState({});
-//   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [enteredUName, setEnteredUName] = useState({ name: String });
-  const [enteredpass, setEnteredPass] = useState({ key: String });
-  const [data, setData] = useState({ data: String });
-  // const [press, setPressed] = useState(false);
-  // const [password, setPassword] = useState('');
+
+   const [enteredUName, setEnteredUName] = useState('');
+  const [enteredpass, setEnteredPass] = useState('');
+  // const [data, setData] = useState({ data: String });
+ 
   const unameHandler = (event) => {
     setEnteredUName(event.target.value);
   };
@@ -20,8 +19,8 @@ function Login({ onLogin }) {
   };
 
   const errors = {
-    uname: "invalid credentials",
-    pass: "invalid credentials",
+    uname: "invalid username",
+    pass: "invalid password",
   };
 
   const handleSubmit = async(event) => {
@@ -34,11 +33,11 @@ function Login({ onLogin }) {
 
       // Assuming user object contains a 'password' property
       if (str) {
-        setData(str);
+        // setData(str);
         // Now you can use the 'password' for authentication or any other purpose
         console.log()
-        if(data === enteredpass){
-          onLogin();
+        if(str === enteredpass){
+          onLogin(enteredUName);
           return <LandingPage />;
         }
         else{
@@ -76,7 +75,7 @@ function Login({ onLogin }) {
         <div className="form">
           <form onSubmit={handleSubmit}>
             <div className="input-container">
-              <label>Username </label>
+              <label>Username/email </label>
               <input type="text" name="uname" onChange={unameHandler} />
               {renderErrorMessage("uname")}
             </div>

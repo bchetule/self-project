@@ -35,7 +35,7 @@ function LandingPage(){
 
 
   return (
-    <div> 
+    <div > 
       <Navbar/>
       <div className='Outerofelements'>
       <div className='elements' style={{'--sm-max-width': '100%', '--md-max-width': '996px', '--lg-max-width': '1600px', '--sm-col-gap': '8px', '--md-col-gap': '12px', '--lg-col-gap': '16px', 

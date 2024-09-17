@@ -16,7 +16,7 @@
   
   .sidebar.open {
     width: 13rem;
-    color: white;
+    /* color: white; */
     /* display: inline-block; */
   }
   
@@ -35,7 +35,7 @@
   }
   
   .sidebar a:hover {
-    color: rgb(16, 68, 22);
+    color: lightgray;
   }
   
   /* Hamburger Icon Styling */
