@@ -8,6 +8,7 @@ import CartItem from './CartItem';
 const Cart = ({currUser}) => {
   const [cartItems, setCartItems] = useState([]);
   const [error, setError] = useState(null);
+  let totalPrice = 0;
 
   const fetchCartItems = async () => {
     try{
@@ -48,6 +49,7 @@ const Cart = ({currUser}) => {
                 {/* <h1> Got the items</h1> */}
               {cartItems.map((item, key) => (
                 <li index={key}>
+                  {/* {totalPrice += item.productId.amount} */}
                 <CartItem item ={item} />
                 </li>
               ))}
@@ -55,8 +57,9 @@ const Cart = ({currUser}) => {
             )}
           </div>
         </div>
+        <div className='outerOfcart-container2'>
+        <h4> Product Details </h4>
         <div className='cart-container2'>
-          <h4> Product Details </h4>
           <div className='PriceContent'>
             <p>price</p>
             <p>Discount</p>
@@ -64,9 +67,16 @@ const Cart = ({currUser}) => {
             <p>Delivery charges</p>
           </div>
           <div className='PriceValue'>
-            <p>{}</p>
+            <p>₹{totalPrice}</p>
+            <p>₹0</p>
+            <p>₹3</p>
+            <p style={{'color': 'green'}}>Free</p>
           </div>
-          <h4> Total Amount </h4>
+        </div>
+        <div className='AmountValue'>
+        <h4> Total Amount </h4>
+        <p>₹{totalPrice + 3}</p>
+        </div>
         </div>
       </div>
       

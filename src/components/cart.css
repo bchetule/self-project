@@ -60,14 +60,32 @@
     width: 20%;
 }
 
-.cart-container2{
-    /* position  */
-    padding: 1.5rem;
+.outerOfcart-container2{
+    padding: 1rem;
     padding-top: 0;
     margin-top: 2rem;
     background-color: white;
 }
 
+.cart-container2{
+    /* position  */
+    /* padding: 1.5rem;
+    padding-top: 0;
+    margin-top: 2rem;
+    background-color: white; */
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 80% 20%;
+}
+.PriceValue, p{
+    /* justify-content: flex-end; */
+    align-items: flex-end; 
+}
+
+.AmountValue{
+    display: flex;
+    justify-content: space-between;
+}
 
 h4{
     font-size: 1.5rem;
@@ -77,4 +95,5 @@ h4{
 
 p{
     font-size: 20px;
+    justify-content: flex-end;
 }
