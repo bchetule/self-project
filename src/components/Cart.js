@@ -49,7 +49,7 @@ const Cart = ({currUser}) => {
                 {/* <h1> Got the items</h1> */}
               {cartItems.map((item, key) => (
                 <li index={key}>
-                  {/* {totalPrice += item.productId.amount} */}
+                  {totalPrice += item.productId.amount}
                 <CartItem item ={item} />
                 </li>
               ))}
